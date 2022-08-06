@@ -41,11 +41,21 @@ ul.menus{
     display: flex !important;
     align-items: center;
     
+    
    
     
 }
 li.menu img{
     width: 100%;
+    
+   
+}
+li.menu:hover  .content{
+    opacity: 1;
+    transition: 1.5s linear;
+}
+li.menu{
+    position: relative;
    
 }
 ul.content > li{
@@ -58,25 +68,18 @@ ul.content > li{
     background-color: cadetblue;
     color: white;
     top: 0;
-    width: 0;
-    overflow: hidden;
+    left: 0;
+    right: 0;
+    overflow: auto;
     bottom: 0;
     position: absolute;
-    transition: width 1s linear;
+    opacity: 0;
     
-    
-    
-}
-.menu:hover .content{
-    
-    width: 30%;
-    height: 500px;
-    
-   
     
     
     
 }
+
 nav.last{
     width: var(--width);
     margin: 0 auto;
