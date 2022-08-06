@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Trang1.css">
+    <script src="Javascript/Trang1.js"></script>
+    <script src="Javascript/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#gototop").hide();
+
+            $(window).scroll(function(){
+
+                if($(this).scrollTop() >= 100){
+                    $("nav").css({
+                        "position": "fixed",
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "z-index": 999,
+                        "opacity": 0.8
+                    })
+                } else{
+                    $("nav").css({
+                        "position": "relative",
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "z-index": 999,
+                        "opacity": 1
+                    })
+                }
+
+
+                if($(this).scrollTop() >= 100)
+                    $("#gototop").show("slow");
+                else
+                    $("#gototop").hide("slow");
+            })
+
+            $("#gototop").click(function(){
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1000);
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Trang1</title>
+</head>
+<body>
+    <div>
+        <a id="gototop" href="Javascript:;">Go to top</a>
+    </div>
+    <header>
+        <img src="anh/logooto.png" alt="logo">
+        <h1 class="animate__animated animate__swing"> CỬA HÀNG Ô TÔ GIÁ RẺ</h1>
+        <img src="anh/oto.jpg" alt="oto">
+        
+    </header>
+    <nav>
+        <ul class="menus">
+            <li><a href="http://127.0.0.1:5500/HTML/Baitaplon.html#" target="_parent"> <i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li class="menu">
+                <a href="#"><i class="fa-solid fa-align-justify"></i> Loại xe</a>
+                <ul class="sub menus">
+                    <li><a href="#">Mercedes</a></li>
+                    <li><a href="http://127.0.0.1:5501/Trang3.html">Lamborghini</a></li>
+                    <li><a href="#">ferrari</a></li>
+                    <li><a href="#">Audi</a></li>
+                </ul>
+            </li>
+            <li><a href="https://oto.com.vn/danh-gia-xe" target="_parent"><i class="fa-solid fa-comment"></i> Đánh giá xe</a></li>
+            <li><a href="https://oto.com.vn/tin-tuc" target="_parent"><i class="fa-solid fa-newspaper"></i> Tin tức xe</a></li>
+        </ul>
+    </nav>
+    <div class="buy">
+        <h2><a href="http://127.0.0.1:5500/HTML/Trang2.html" target="_blank">Mua xe tại đây, an tâm kiểm dịch(ấn vào đây để đăng ký)</a></h2>
+        
+    </div>
+    
+    <aside class="ads">
+        <div>Liên hệ quảng cáo</div>
+        <div>Liên hệ quảng cáo</div>
+    </aside>
+    <div class="gioithieu">
+        <div>
+            <h1>GIỚI THIỆU</h1>
+            <p>Chào mừng bạn đến với Oto.com.vn - Web mua bán ô tô trực tuyến uy tín nhất Việt Nam.</p>
+            <p>Bạn muốn mua ô tô cũ hoặc xe hơi mới. Bạn cần tra cứu đầy đủ và chi tiết nhất về chiếc xe mình yêu thích. Tuy nhiên, có quá nhiều thông tin khiến bạn nhiễu loạn và ngay cả việc tìm đến điểm mua chất lượng cũng gặp phải khó khăn. Quỹ thời gian vàng bạc của bạn đang dần bị tiêu tốn mà không mang lại hiệu quả. Vì thế website Oto.com.vn ra đời chính là để mang đến giải pháp tối ưu nhất cho công cuộc mua ô tô đầy gian nan của bạn được dễ dàng hơn bao giờ hết.</p>
+            <h1>Oto.com.vn - Web mua bán oto số 1 Việt Nam mang lại gì cho bạn?</h1>
+            <ul>
+                <li>- Cập nhật liên tục thông tin liên quan đến lĩnh vực ô tô ở cả thị trường trong và ngoài nước cho bạn xem và tham khảo.</li>
+                <li>- Chúng tôi là sàn mua bán ô tô sôi động nhất với hàng ngàn lựa chọn về sản phẩm cũ/ mới. Tại đây, bạn không chỉ dễ dàng tìm kiếm mà còn am hiểu chiếc xế cưng của mình một cách toàn diện nhất từ thiết kế, trang bị nội thất, tính năng tiện ích, công nghệ an toàn hay khối động cơ, khả năng vận hành và mức tiêu thụ nhiên liệu. Hơn nữa, bạn có thể chỉ ngồi tại nhà mà vẫn nắm giá xe ô tô đến từ hệ thống đại lý bán xe hơi trên toàn quốc.</li>
+                <li>- Chia sẻ các bài viết từ chuyên gia về so sánh xe, đánh giá xe, kinh nghiệm mua bán xe hơi cũ/mới, kinh nghiệm chăm sóc và bảo dưỡng xe hơi, kinh nghiệm lái xe, phong thủy xe hơi; tư vấn pháp luật xe, bảo hiểm mua bán ô tô hay tư vấn hỗ trợ vay mua xe trả góp… nhằm giúp bạn không chỉ là người mua xe thông thái mà còn là người sử dụng xe thông minh.</li>
+                <li>- Oto.com.vn đặt lên đầu sự trung thành và lợi ích của người dùng để trở thành người bạn đồng hành đáng tin cậy nhất. Mỗi sản phẩm ô tô mới, oto đã qua sử dụng xuất hiện trên website đều phải trải qua quy trình kiểm duyệt kỹ càng. Mỗi địa chỉ bán ô tô hiển thị đến người dùng đều được chọn lọc khắt khe từ quan hệ đối tác với các đại lý, trung tâm phân phối chính hãng cùng nhiều đại lý bán lẻ uy tín có mặt tại nước ta.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="danhsach"><h1>DANH MỤC SẢN PHẨM</h1></div>
+    <section class="subject flex">
+        <div class="contents">
+            <div class="content">
+                <div>
+                    
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="content">
+                <div>
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contents flex">
+            <div class="content">
+                <div>
+                    <div class="news">
+                        <img src="anh/anh8.jpg" alt="xe">
+                        <p class="new">new</p>
+                    </div>
+                    <p><a href="#">thông tin chi tiết</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="last">
+        <ul class="tail">
+            <li><a href="#">Liên hệ: 0386770XXX</a></li>
+            <li><a href="#">Email: Oto.vn@gmail.com</a></li>
+            <li><a href="#">Hotline: 0366899XXX</a></li>
+            <li><a href="#">Lưu ý: chúng tôi không mua bán trực tiếp qua mạng. Quý khách vui lòng liên hệ trực tiếp với chủ xe để giao dịch. Mọi vấn đề chúng tôi sẽ không chịu trách nhiệm.</a></li>
+        
+        <h3>Địa chỉ trụ sở chính</h3>
+        <ul class="tail">
+            <li>Tầng 29 Tòa Keangnam Landmark, KĐT mới Cầu Giấy, Phường Mễ Trì, Quận Nam Từ Liêm, TP. Hà Nội.</li>
+            <li><i class="fa-solid fa-phone"></i> 024.3212.3830 | 0904.573.739 | 0778.448.886</li>
+        </ul>
+        <h3>Văn phòng TP. Hồ Chí Minh</h3>
+        <ul class="tail">
+            <li>Tầng 14, Toà nhà Vietcombank, số 5 Công Trường Mê Linh, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh.</li>
+            <li><i class="fa-solid fa-phone"></i> 024.3212.3830 | 0904.573.739 | 0778.448.886</li>
+        </ul>
+    </div>
+    <footer>
+        <span><img src="anh/oto1.jpg" alt="xe"></span>
+    </footer>
+</body>
+</html>

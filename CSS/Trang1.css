@@ -1,0 +1,281 @@
+:root{
+    --width: 80%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blanchedalmond;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background: linear-gradient(lightblue, aqua);
+    display: flex;
+    padding: 1px;
+    align-items: center;
+}
+
+
+header  h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 3px slategray;
+    font-family: arial;
+    animation: .5s linear infinite;
+}
+
+
+header > img{
+    width: 30%;
+}
+header > img:last-child{
+    width: 15%;
+    margin-left: auto;
+}
+a#gototop{
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    background-color: rgb(0,0,255,0.6);
+    color: white;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 1rem 1rem;
+
+}
+ul.menus{
+    display: flex;
+    background: linear-gradient(violet, lightblue);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul.menus > li > a{
+    display: block !important;
+    text-decoration: none;
+    
+    padding: 1rem 1.5rem;
+    /* width: 4rem; */
+    text-align: center;
+    
+}
+ul.menus > li > a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.sub{
+    display: none !important;
+    position: absolute;
+    z-index: 100;
+}
+
+.menu:hover .sub{
+    display: block !important;
+    padding: 1rem ;
+    
+}
+
+div.buy{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(blue, lightblue);
+    
+    text-align: center;
+   
+
+}
+
+
+div.buy  a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: doimauchu .5s linear infinite;
+} 
+@keyframes doimauchu{
+    0%{
+        color: white;
+    }
+    25%{
+        color: gold;
+    }
+    75%{
+        color: red;
+    }
+ }
+   
+.sub::after{
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent violet transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+}
+.ads > div{
+    width: calc((100% - var(--width))/2 - 2%);
+    background-color: blue;
+    padding: 7rem 0;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: fixed;
+    color: white;
+}
+.ads > div:first-child{
+    left: 1%;
+}
+.ads > div:last-child{
+    right: 1%;
+}
+div.gioithieu{
+    width: 80%;
+    margin: 5px auto;
+    
+}
+div.gioithieu  h1{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+
+div.gioithieu p{
+    background-color: darkgray;
+    padding: 5px 4px;
+}
+div.gioithieu ul{
+    background-color: darkgray;
+    list-style-type: none;
+    padding: 5px 4px;
+}
+div.danhsach{
+    width: 80%;
+    margin: 5px auto;
+    background-color: cyan;
+    margin-bottom: 0;
+}
+.subject{
+    width: var(--width);
+    background: linear-gradient(aqua, lightblue, violet);
+    border-radius: 1rem 1rem 1rem;
+    margin: 3px auto;
+    
+}
+div.contents{
+    width: 25%;
+    padding: 5px;
+}
+div.content img{
+    width: 100%;
+    padding: 5px;
+    /* margin: 1%; */
+   transition: transform .5s linear;
+}
+div.content img:hover{
+    transform: scale(0.9);
+}
+
+div.news{
+    position: relative;
+}
+p.new{
+    color: black;
+    background-color: green;
+    padding: 3px 5px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    border-radius: 1rem 1rem 1rem 1rem;
+    animation: doimau .5s linear infinite;
+}
+@keyframes doimau{
+    from{
+        color: yellow;
+    }
+    to{
+        color: red;
+    }
+}
+p a{
+    text-decoration: none;
+    color: chartreuse;
+    
+}
+div.last{
+    width: var(--width);
+    margin: 0 auto;
+    padding: 1%;
+    background: linear-gradient(lightgreen, green, silver);
+}
+
+ul.tail > li{
+    list-style-type: none;
+}
+ul.tail > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+footer{
+    
+    background: linear-gradient(silver, lightgreen);
+    overflow: hidden;   
+    
+    
+    
+}
+footer img{
+    width: 10%;
+}
+footer > span{
+    animation: dichuyen 15s linear infinite;
+    position: relative;
+}
+@keyframes dichuyen{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 1500px)  {
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    div.contents{
+        width: 99%;
+    }
+    ul.menus{
+        flex-direction: column;
+        
+    }
+    ul.menus > li{
+        text-align: left;
+        max-width: 100%;
+    }
+}

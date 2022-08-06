@@ -1,0 +1,92 @@
+:root{
+    --width:80%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.v-center{
+    align-items: center;
+}
+.s-bet{
+    justify-content: space-between;
+}
+div img{
+    width: 120px;
+}
+nav{
+    background-color: aqua;
+}
+header{
+    background-color: lightblue;
+    color: white;
+}
+header h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 3px slategray;
+}
+ul.menu {
+    padding: 0;
+    margin: 0;
+}
+ul.menu > li {
+    list-style-type: none;
+   
+}
+ul.menu > li > a{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: block;
+}
+ul.menu > li > a:hover{
+    background-color: blue;
+    color: white;
+}
+.sec{
+    width: var(--width);
+    background: linear-gradient(aqua,silver);
+}
+.topics{
+    
+    margin-top: 1.5rem;
+    
+
+}
+.topic{
+    margin-top: 1.5rem;
+    
+}
+.topic > h1{
+    background-color: blue;
+    color: white;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    
+    
+}
+.content{
+    
+    padding: 0.5rem 0.5rem;
+}
+.content img{
+    border-radius: 40%;
+    width: 120px;
+}
+div.thongtin > p >a{
+    text-decoration: none;
+}
+.tt{
+    list-style-type: none;
+}
+.t{
+    text-decoration: none;
+    text-align: right;
+}
+.ads > div{
+    padding: 5px 0;
+    margin: 1px;
+    background: linear-gradient(lightblue, aqua);
+    position: fixed;
+    width: calc((100% - var(--width))/2-2%);
+
+}

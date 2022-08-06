@@ -1,0 +1,96 @@
+body{
+    background-color: antiquewhite;
+}
+.flex{
+    display: flex;
+}
+header{
+    background: linear-gradient(lightblue, aqua);
+    display: flex;
+    padding: 1px;
+    align-items: center;
+}
+h2{
+    margin-left: auto;
+    font-size: 15px;
+}
+header  h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 3px slategray;
+    font-family: arial;
+}
+header > img{
+    width: 30%;
+}
+header > img:last-child{
+    width: 15%;
+    margin-left: auto;
+}
+div.tieude{
+    color: chocolate;
+}
+div.tieude h1{
+    font-size: 2.5rem;
+}
+div.tieude p{
+    font-size: 2rem;
+}
+div.first{
+    background-color: aquamarine;
+}
+div.dangki{
+    background-color: burlywood;
+}
+div.dangki h2{
+    font-size: 1.5rem;
+}
+div.dangki p{
+    font-size: 1.2rem;
+}
+
+div.form{
+    width: 50%;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 1rem;
+}
+div.form > input{
+    width: 90%;
+    padding: 1rem 1.5rem;
+    display: block;
+    margin: 1rem;
+    
+    
+    
+}
+div.form > input:last-child{
+    width: 10%;
+    padding: 2px 3px;
+    margin-left: 3px;
+}
+
+div.questions{
+    background-color: lightblue;
+    color: blue;
+    
+    flex-wrap: wrap;
+}
+@keyframes doibien{
+    from{
+        border-color: 1px solid gray;
+    }
+    to{
+        border-color: 2px solid red;
+    }
+}
+.error{
+    animation: doibien .5s 3;
+}
+input[type=number]{
+    border: 1px solid gray;
+}
+input[type=text]{
+    border: 1px solid gray;
+}
