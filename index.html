@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Trang1.css">
     <script src="Javascript/Trang1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="Javascript/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function(){
+         $(document).ready(function(){
             $("#gototop").hide();
 
             $(window).scroll(function(){
@@ -45,10 +46,23 @@
                     scrollTop: 0
                 }, 1000);
             })
+
+            $("div.content > figure").addClass("wow animate__flipInY")
+
+            wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animate__animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            })
+            wow.init()
         })
     </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <title>Trang1</title>
 </head>
 <body>
@@ -75,6 +89,7 @@
             </li>
             <li><a href="https://oto.com.vn/danh-gia-xe" target="_parent"><i class="fa-solid fa-comment"></i> Đánh giá xe</a></li>
             <li><a href="https://oto.com.vn/tin-tuc" target="_parent"><i class="fa-solid fa-newspaper"></i> Tin tức xe</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Tìm kiếm"></li>
         </ul>
     </nav>
     <div class="buy">
@@ -83,15 +98,15 @@
     </div>
     
     <aside class="ads">
-        <div>Liên hệ quảng cáo</div>
-        <div>Liên hệ quảng cáo</div>
+        <div class="animate__animated animate__slideInLeft">Liên hệ quảng cáo</div>
+        <div class="animate__animated animate__slideInRight">Liên hệ quảng cáo</div>
     </aside>
     <div class="gioithieu">
         <div>
-            <h1>GIỚI THIỆU</h1>
+            <h1 class="titles"><span>GIỚI THIỆU</span> </h1>
             <p>Chào mừng bạn đến với Oto.com.vn - Web mua bán ô tô trực tuyến uy tín nhất Việt Nam.</p>
             <p>Bạn muốn mua ô tô cũ hoặc xe hơi mới. Bạn cần tra cứu đầy đủ và chi tiết nhất về chiếc xe mình yêu thích. Tuy nhiên, có quá nhiều thông tin khiến bạn nhiễu loạn và ngay cả việc tìm đến điểm mua chất lượng cũng gặp phải khó khăn. Quỹ thời gian vàng bạc của bạn đang dần bị tiêu tốn mà không mang lại hiệu quả. Vì thế website Oto.com.vn ra đời chính là để mang đến giải pháp tối ưu nhất cho công cuộc mua ô tô đầy gian nan của bạn được dễ dàng hơn bao giờ hết.</p>
-            <h1>Oto.com.vn - Web mua bán oto số 1 Việt Nam mang lại gì cho bạn?</h1>
+            <h1 class="question"><span>Oto.com.vn - Web mua bán oto số 1 Việt Nam mang lại gì cho bạn?</span> </h1>
             <ul>
                 <li>- Cập nhật liên tục thông tin liên quan đến lĩnh vực ô tô ở cả thị trường trong và ngoài nước cho bạn xem và tham khảo.</li>
                 <li>- Chúng tôi là sàn mua bán ô tô sôi động nhất với hàng ngàn lựa chọn về sản phẩm cũ/ mới. Tại đây, bạn không chỉ dễ dàng tìm kiếm mà còn am hiểu chiếc xế cưng của mình một cách toàn diện nhất từ thiết kế, trang bị nội thất, tính năng tiện ích, công nghệ an toàn hay khối động cơ, khả năng vận hành và mức tiêu thụ nhiên liệu. Hơn nữa, bạn có thể chỉ ngồi tại nhà mà vẫn nắm giá xe ô tô đến từ hệ thống đại lý bán xe hơi trên toàn quốc.</li>
@@ -100,14 +115,19 @@
             </ul>
         </div>
     </div>
-    <div class="danhsach"><h1>DANH MỤC SẢN PHẨM</h1></div>
+    <div class="danhsach"><h1 class="title"><span>DANH MỤC SẢN PHẨM</span> </h1></div>
     <section class="subject flex">
         <div class="contents">
             <div class="content">
                 <div>
                     
-                    <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
+                    <div class="news">  
+                        <figure class="wow animate__flipInY c4-izmir">
+                            <img src="anh/lamborghini2.jpg" alt="lamborghini2">
+                            <figcaption>
+                                <h1>lamborghini</h1>
+                            </figcaption>
+                        </figure>              
                         <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
@@ -117,7 +137,14 @@
         <div class="contents">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/lamborghini5.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Lamborghini</h1>
+                            </figcaption>
+                        </figure> 
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -125,7 +152,14 @@
         <div class="contents">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure  class="wow animate__flipInY">
+                            <img src="anh/audi2.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Audi</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -133,7 +167,14 @@
         <div class="contents">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure  class="wow animate__flipInY">
+                            <img src="anh/mercedes1.jpg" alt="xe">
+                        </figure>
+                        <figcaption>
+                            <h1>Mercedes</h1>
+                        </figcaption>
+                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -141,7 +182,14 @@
         <div class="contents">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure  class="wow animate__flipInY">
+                            <img src="anh/mercedes6.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Mercedes</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -150,7 +198,13 @@
             <div class="content">
                 <div>
                     <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/ferrari2.jpg" alt="xe">
+                            <figcaption>
+                                <h1>ferrari</h1>
+                            </figcaption>
+                        </figure>
+                        
                         <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
@@ -160,7 +214,14 @@
         <div class="contents">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/ferrari7.jpg" alt="xe">
+                            <figcaption>
+                                <h1>ferrari</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -169,8 +230,13 @@
             <div class="content">
                 <div>
                     <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
-                        <p class="new">new</p>
+                        <figure class="wow animate__flipInY">
+                             <img src="anh/mercedes4.jpg" alt="xe">
+                             <figcaption>
+                                <h1>Mercedes</h1>
+                             </figcaption>
+                        </figure>
+                       <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
@@ -180,7 +246,13 @@
             <div class="content">
                 <div>
                     <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/lamborghini3.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Lamborghi</h1>
+                            </figcaption>
+                        </figure>
+                        
                         <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
@@ -190,7 +262,14 @@
         <div class="contents flex">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/audi5.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Audi</h1>
+                            </figcaption>
+                        </figure> 
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -199,7 +278,13 @@
             <div class="content">
                 <div>
                     <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
+                        <figure class="wow animate__flipInY">
+                             <img src="anh/lamborghini6.jpg" alt="xe">
+                             <figcaption>
+                                <h1>Lamborghi</h1>
+                             </figcaption>
+                        </figure>
+                       
                         <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>
@@ -209,7 +294,14 @@
         <div class="contents flex">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/mercedes3.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Mercedes</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -217,7 +309,14 @@
         <div class="contents flex">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/audi1.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Audi</h1>
+                            </figcaption>
+                        </figure> 
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -225,7 +324,14 @@
         <div class="contents flex">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/lamborghini1.jpg" alt="xe">
+                            <figcaption>
+                                <h1>Lamborghi</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -233,7 +339,14 @@
         <div class="contents flex">
             <div class="content">
                 <div>
-                    <div> <img src="anh/anh8.jpg" alt="xe"></div>
+                    <div>
+                        <figure class="wow animate__flipInY">
+                            <img src="anh/ferrari4.jpg" alt="xe">
+                            <figcaption>
+                                <h1>ferrari</h1>
+                            </figcaption>
+                        </figure>
+                    </div>
                     <p><a href="#">thông tin chi tiết</a></p>
                 </div>
             </div>
@@ -242,7 +355,13 @@
             <div class="content">
                 <div>
                     <div class="news">
-                        <img src="anh/anh8.jpg" alt="xe">
+                        <figure class="wow animate__flipInY">
+                             <img src="anh/ferrari1.jpg" alt="xe">
+                             <figcaption>
+                                <h1>ferrari</h1>
+                             </figcaption>
+                        </figure>
+                       
                         <p class="new">new</p>
                     </div>
                     <p><a href="#">thông tin chi tiết</a></p>

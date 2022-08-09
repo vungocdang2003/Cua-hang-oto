@@ -16,7 +16,7 @@ function doimau(){
     }
 
     b.classList.removeO("error");
-    if(b.value === " "){
+    if(b.value === ""){
         setTimeout(function() {
             b.classList.add("error");           
         }, 100);
@@ -25,7 +25,7 @@ function doimau(){
     }
 
     c.classList.removeO("error");
-    if(b.value === " "){
+    if(b.value === ""){
         setTimeout(function() {
             c.classList.add("error");           
         }, 100);
@@ -34,7 +34,7 @@ function doimau(){
     }
 
     d.classList.removeO("error");
-    if(b.value === " "){
+    if(b.value === ""){
         setTimeout(function() {
             d.classList.add("error");           
         }, 100);
@@ -49,6 +49,6 @@ function doimau(){
     c = parseFloat(c.value);
     d = parseFloat(d.value);
     let k = document.getElementById("dangky");
-    k.innerHTML = console.info("Đăng ký thành công")
+    k.innerText = alert("Dang ky thanh cong");
    
 }

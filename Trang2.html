@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/Trang2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="Javascript/Trang2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Trang2</title>
 </head>
 <body>
@@ -40,7 +41,16 @@
             <input type="text" id="tinhthanh" placeholder="Nhập tỉnh/thành phố"/>
             <input type="text" id="quanhuyen" placeholder="Nhập quận/huyện"/>
             <input type="text" id="tenxe" placeholder="Tên xe bạn muốn kiểm tra"/>
-            <input type="button" id="dangky" onclick="doimau()" value="Đăng ký">
+            <div class="container">
+                <input type="button" class="btn" onclick="openshow()" value="Đăng ký">
+                <div class="show" id="show">
+                    <img src="anh/tick.png" alt="tick">
+                    <h2>THANK YOU</h2>
+                    <p>Đăng ký thành công</p>
+                    <button type="button" onclick="closeshow()">OK</button>
+                </div>
+            </div>
+            
         </div>
             
         <div class="questions">
@@ -74,5 +84,16 @@
             </ol>
         </div>
     </section>
+    <script>
+        let show = document.getElementById("show");
+
+        function openshow(){
+            show.classList.add("open-show");
+        }
+
+        function closeshow(){
+            show.classList.remove("open-show");
+        }
+    </script>
 </body>
 </html>

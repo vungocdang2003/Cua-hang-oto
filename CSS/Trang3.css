@@ -18,6 +18,7 @@ header  h1{
     font-size: 50px;
     text-shadow: 5px 5px 3px slategray;
     font-family: arial;
+    animation: .5s linear infinite;
 }
 header > img{
     width: 30%;
