@@ -95,6 +95,7 @@ div.form > input{
     visibility: visible;
     top: 80%;
     transform: translate(-50% -50%) scale(1);
+    left: 35%;
   
 }
 .show img{
