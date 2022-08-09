@@ -61,7 +61,7 @@ div.form > input{
     width: 55%;
     padding: 1rem 1.5rem;
     display: block;
-    margin: 1rem;
+    margin: 20px;
     border-radius: 20px;
     
     
@@ -75,6 +75,7 @@ div.form > input{
     font-size: 20px;
     font-weight: 5000;
     border-radius: 30px;
+    margin-left: 20px;
 }
 .show{
     width: 400px;
