@@ -47,6 +47,7 @@ a#gototop{
     right: 15px;
     bottom: 15px;
     border-radius: 1rem 1rem;
+    z-index: 999;
 
 }
 ul.menus{
@@ -366,5 +367,99 @@ footer > span{
     ul.menus > li{
         text-align: left;
         max-width: 100%;
+    }
+
+    h1.titles{
+        border-bottom: 5px solid blue;
+        
+       
+    }
+    
+    h1.titles >span{
+        background-color: blue;
+        display: block;
+        width: 30%;
+        padding: 10px;
+        color: azure;
+        font-size: 1rem;
+        position: relative;
+    
+    }
+    
+    
+    
+    h1.titles >span::after{
+        content: " ";
+        border-width: 19px;
+        border-style: solid;
+        border-color: transparent transparent blue blue;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+    }
+    
+    h1.question{
+        border-bottom: 5px solid blue;
+        
+       
+    }
+    
+    h1.question >span{
+        background-color: blue;
+        display: block;
+        width: 50%;
+        padding: 10px;
+        color: azure;
+        font-size: 1rem;
+        position: relative;
+    
+    }
+    
+
+    
+    h1.question >span::after{
+        content: " ";
+        border-width: 38px;
+        border-style: solid;
+        border-color: transparent transparent blue blue;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+    }
+    
+    h1.title{
+        border-bottom: 5px solid blue;
+        
+       
+    }
+    
+    h1.title >span{
+        background-color: blue;
+        display: block;
+        width: 30%;
+        padding: 10px;
+        color: azure;
+        font-size: 1rem;
+        position: relative;
+    
+    }
+    
+    
+    
+    h1.title >span::after{
+        content: " ";
+        border-width: 30px;
+        border-style: solid;
+        border-color: transparent transparent blue blue;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+    }
+    aside{
+        display: none;
+    }
+    nav{
+        
+        position: relative;
     }
 }
