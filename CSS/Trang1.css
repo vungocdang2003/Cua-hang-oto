@@ -357,16 +357,30 @@ footer > span{
 }
 
 @media screen and (max-width: 600px) {
+
+    header > img:first-child{
+        height: 80px;
+    }
+    header > h1{
+        font-size: 1.3rem;
+    }
+    header > img:last-child{
+        height: 80px;
+    }
+
     div.contents{
         width: 99%;
     }
     ul.menus{
         flex-direction: column;
         
+        
     }
     ul.menus > li{
         text-align: left;
         max-width: 100%;
+        height: 45px;
+        
     }
 
     h1.titles{
