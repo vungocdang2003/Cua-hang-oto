@@ -1,0 +1,99 @@
+header{
+    background: linear-gradient(lightblue, aqua);
+    display: flex;
+    padding: 1px;
+    align-items: center;
+}
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header  h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 3px slategray;
+    font-family: arial;
+    animation: .5s linear infinite;
+}
+header > img{
+    width: 30%;
+}
+header > img:last-child{
+    width: 15%;
+    margin-left: auto;
+}
+section.flex{
+    background-color:bisque;
+    width: 100%;
+}
+section.sub{
+    
+    width: 50%;
+   
+    
+}
+ul.menus{
+    list-style-type: none;
+    display: flex !important;
+    align-items: center;
+    
+    
+   
+    
+}
+li.menu img{
+    width: 100%;
+    
+   
+}
+li.menu:hover  .content{
+    opacity: 1;
+    transition: 1.5s linear;
+}
+li.menu{
+    position: relative;
+   
+}
+ul.content > li{
+    list-style-type: none;
+    
+    
+}
+.content{
+    padding: 0;
+    background-color: cadetblue;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    
+    
+    
+    
+}
+
+nav.last{
+    width: var(--width);
+    margin: 0 auto;
+    padding: 1%;
+    background: linear-gradient(lightgreen, green, silver);
+}
+
+ul.tail > li{
+    list-style-type: none;
+}
+ul.tail > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
