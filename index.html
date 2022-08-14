@@ -57,6 +57,18 @@
                 live: true
             })
             wow.init()
+
+            var index =1;
+
+            changeImage = function(){
+                    var imgs=["anh/banner1.png","anh/banner2.png",'anh/banner3.png'];
+                    document.getElementById('banner').src = imgs[index];
+                    index++;
+                    if(index === imgs.length)
+                    index =0;
+            }
+
+            setInterval(changeImage,3000);
         })
     </script>
     
@@ -75,6 +87,9 @@
         <img src="anh/oto.jpg" alt="oto">
         
     </header>
+    <div class="Slides" onload="changeImage">
+        <img src="anh/banner1.png" alt="banner1" id="banner">
+    </div>
     <nav>
         <ul class="menus">
             <li><a href="http://127.0.0.1:5500/HTML/Baitaplon.html#" target="_parent"> <i class="fa-solid fa-house"></i> Trang chủ</a></li>
