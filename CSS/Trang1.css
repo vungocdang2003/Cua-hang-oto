@@ -318,6 +318,18 @@ p a{
     color: purple;
     
 }
+
+div.tuyendung{
+    background-color: lightblue;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+div.tuyendung > a{
+    text-decoration: none;
+}
+
 div.last{
     width: var(--width);
     margin: 0 auto;

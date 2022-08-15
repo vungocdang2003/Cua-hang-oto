@@ -1,0 +1,101 @@
+
+body{
+    background-color: bisque;
+}
+
+header{
+    background: linear-gradient(lightblue, aqua);
+    display: flex;
+    padding: 1px;
+    align-items: center;
+}
+
+
+header  h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 3px slategray;
+    font-family: arial;
+    animation: .5s linear infinite;
+}
+
+
+header > img{
+    width: 30%;
+    
+}
+header > img:last-child{
+    width: 15%;
+    margin-left: auto;
+}
+
+div.title h1{
+    font-size: 3rem;
+}
+
+section.contents{
+    display: block;
+}
+
+section.content{
+    display: flex;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+
+
+
+section.content > h1{
+    font-size: 2rem;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+}
+
+section.content > div.sub{
+    margin: 1rem;
+} 
+
+
+div.last{
+    width: var(--width);
+    margin: 0 auto;
+    padding: 1%;
+    background: linear-gradient(lightgreen, green, silver);
+}
+
+ul.tail > li{
+    list-style-type: none;
+}
+ul.tail > li > a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+footer{
+    
+    background: linear-gradient(rgb(62, 126, 135), lightgreen);
+    overflow: hidden;   
+    
+    
+    
+}
+footer img{
+    width: 10%;
+}
+footer > span{
+    animation: dichuyen 15s linear infinite;
+    position: relative;
+}
+@keyframes dichuyen{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
