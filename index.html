@@ -33,6 +33,22 @@
                         "opacity": 1
                     })
                 }
+                
+                if($(this).scrollTop() >= 300){
+                    $("aside").css({
+                        "display": "block"
+                        
+                    })
+                } else{
+                    $("aside").css({
+                        "display": "none",
+                        "left": 3,
+                        "right": 3,
+                        "top": 30,
+                        "z-index": 999,
+                        "opacity": 1
+                    })
+                }
 
 
                 if($(this).scrollTop() >= 100)

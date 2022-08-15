@@ -146,6 +146,8 @@ div.buy  a{
     border-radius: 10px;
     position: fixed;
     color: white;
+    top: 30%;
+    z-index: -1;
 }
 .ads > div:first-child{
     left: 1%;
