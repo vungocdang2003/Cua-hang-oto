@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+   
+}
 body{
     background-color: rgb(191, 202, 213);
 }
@@ -96,7 +100,7 @@ input[type=text]{
     border: 1px solid gray;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div.form{
         
         width: 60%;
@@ -109,12 +113,12 @@ input[type=text]{
         
     }
     div.form > input{
-        width: 50%;
+        width: 70%;
         padding: 1rem 1rem;
         display: block;
         margin: 20px;
         border-radius: 20px;
-        margin-left: 50px;
+        margin-left: 35px;
         
         
     }
@@ -126,7 +130,7 @@ input[type=text]{
         font-size: 20px;
         font-weight: 5000;
         border-radius: 30px;
-        margin-left: 75px;
+        margin-left: 60px;
         width: 15%;
         
         
@@ -134,8 +138,7 @@ input[type=text]{
     input[type=button]
     {
         font-size: 1rem;
-        
-        
+       text-align: center;
     }
     .show{
         width: 300px;
@@ -156,7 +159,7 @@ input[type=text]{
         visibility: visible;
         top: 5%;
         transform: translate(-50% -50%) scale(1);
-        left: 15%;
+        left: 8%;
       
     }
     .show img{

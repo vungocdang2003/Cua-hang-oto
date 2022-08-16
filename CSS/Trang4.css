@@ -1,4 +1,9 @@
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: bisque;
 }
@@ -97,5 +102,53 @@ footer > span{
     }
     to{
         left: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    header{
+        width: 99% !important;
+    }
+    header > img:first-child{
+        height: 80px;
+    }
+    header > h1{
+        font-size: 1.3rem;
+    }
+    header > img:last-child{
+        height: 80px;
+    }
+
+    div.contents{
+        width: 99%;
+    }
+    ul.menus{
+        flex-direction: column;
+        
+        
+    }
+    ul.menus > li{
+        text-align: left;
+        max-width: 100%;
+        height: 45px;
+        
+    }
+    section.contents{
+        display: block;
+    }
+    section.content{
+        display: block;
+    }
+    section.content > img{
+        width: 50%;
+    }
+    div.last{
+        font-size: 10px;
+        
+    }
+    footer{
+        display: none;
+    }
+    ul.tail{
+        padding: 2px 2px;
     }
 }

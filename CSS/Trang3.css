@@ -81,7 +81,7 @@ ul.content > li{
     
 }
 
-nav.last{
+div.last{
     width: var(--width);
     margin: 0 auto;
     padding: 1%;
@@ -96,4 +96,90 @@ ul.tail > li > a{
     text-decoration: none;
     color: black;
 
+}
+@media screen and (max-width: 500px) {
+    header > img:first-child{
+        height: 80px;
+    }
+    header > h1{
+        font-size: 1.3rem;
+    }
+    header > img:last-child{
+        height: 80px;
+    }
+
+    div.contents{
+        width: 99%;
+    }
+    ul.menus{
+        flex-direction: column;
+        
+        
+    }
+    ul.menus > li{
+        text-align: left;
+        max-width: 100%;
+        height: 45px;
+        
+    }
+    section.flex{
+        background-color:bisque;
+        width: 100%;
+        margin: 5px;
+       
+    }
+    section.sub{
+        margin: 5px;
+        width: 100%;
+        
+       
+        
+    }
+    ul.menus{
+        list-style-type: none;
+        display: flex !important;
+        right: 15px !important;
+        
+        
+       
+        
+    }
+    li.menu img{
+        width: 100%;
+       
+       
+    }
+    li.menu:hover  .content{
+        opacity: 1;
+        transition: 1.5s linear;
+    }
+    li.menu{
+        position: relative;
+       
+    }
+    ul.content > li{
+        list-style-type: none;
+        
+        
+    }
+    .content{
+        padding: 0;
+        background-color: cadetblue;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        bottom: 0;
+        position: absolute;
+        opacity: 0;
+        
+        
+        
+        
+    }
+    div.last{
+        font-size: 10px;
+    }
+    
 }

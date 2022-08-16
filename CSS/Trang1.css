@@ -379,7 +379,7 @@ footer > span{
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     header > img:first-child{
         height: 80px;
@@ -427,7 +427,7 @@ footer > span{
     
     h1.titles >span::after{
         content: " ";
-        border-width: 19px;
+        border-width: 28px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -456,7 +456,7 @@ footer > span{
     
     h1.question >span::after{
         content: " ";
-        border-width: 38px;
+        border-width: 56px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -473,7 +473,7 @@ footer > span{
     h1.title >span{
         background-color: blue;
         display: block;
-        width: 30%;
+        width: 50%;
         padding: 10px;
         color: azure;
         font-size: 1rem;
@@ -485,7 +485,7 @@ footer > span{
     
     h1.title >span::after{
         content: " ";
-        border-width: 30px;
+        border-width: 28px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -493,10 +493,21 @@ footer > span{
         bottom: 0;
     }
     aside{
-        display: none;
+        display: none !important;
     }
     nav{
         
         position: relative;
+    }
+
+    div.tuyendung{
+        font-size: 15px;
+    }
+
+    div.last{
+        font-size: 10px;
+    }
+    footer{
+        display: none;
     }
 }
