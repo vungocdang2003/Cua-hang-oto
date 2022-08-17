@@ -41,6 +41,7 @@ section.contents{
     display: block;
 }
 
+
 section.content{
     display: flex;
     width: 100%;
@@ -138,8 +139,8 @@ footer > span{
     section.content{
         display: block;
     }
-    section.content > img{
-        width: 50%;
+    div.img > img{
+        width: 100%;
     }
     div.last{
         font-size: 10px;

@@ -15,7 +15,7 @@ div.form{
     border-radius: 1rem 1rem;
 }
 div.form > input{
-    width: 55%;
+    width: 80%;
     padding: 1rem 1.5rem;
     display: block;
     margin: 20px;
@@ -23,6 +23,14 @@ div.form > input{
     
     
     
+}
+
+div.conteiner{
+    text-align: center;
+   
+}
+div.conteiner > input{
+   left: 45px;
 }
 .btn{
     padding: 10px 60px;
@@ -32,7 +40,9 @@ div.form > input{
     font-size: 20px;
     font-weight: 5000;
     border-radius: 30px;
-    margin-left: 20px;
+    
+   
+    
 }
 .show{
     width: 400px;
@@ -53,7 +63,7 @@ div.form > input{
     visibility: visible;
     top: 20%;
     transform: translate(-50% -50%) scale(1);
-    left: 35%;
+    left: 37%;
   
 }
 .show img{
