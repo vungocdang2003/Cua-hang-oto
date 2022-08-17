@@ -3,7 +3,7 @@ function init(){
 
     $(window).scroll(function(){
 
-        if($(this).scrollTop() >= 100){
+        if($(this).scrollTop() >= 500){
             $("nav").css({
                 "position": "fixed",
                 "left": 0,
@@ -25,17 +25,17 @@ function init(){
         
         if($(this).scrollTop() >= 300){
             $("aside").css({
-                "display": "block"
-                
-            })
-        } else{
-            $("aside").css({
-                "display": "none",
+                "display": "block",
                 "left": 3,
                 "right": 3,
                 "top": 30,
                 "z-index": 999,
                 "opacity": 1
+            })
+        } else{
+            $("aside").css({
+                "display": "none",
+                
             })
         }
 

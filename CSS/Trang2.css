@@ -21,17 +21,13 @@ div.form > input{
     margin: 20px;
     border-radius: 20px;
     
-    
-    
 }
 
 div.conteiner{
     text-align: center;
    
 }
-div.conteiner > input{
-   left: 45px;
-}
+
 .btn{
     padding: 10px 60px;
     border: 0;
@@ -123,14 +119,17 @@ input[type=text]{
         
     }
     div.form > input{
-        width: 70%;
+        width: 80%;
         padding: 1rem 1rem;
         display: block;
         margin: 20px;
         border-radius: 20px;
-        margin-left: 35px;
         
         
+        
+    }
+    div.conteiner{
+        text-align: center !important;
     }
     .btn{
         padding: 10px 60px;
@@ -140,8 +139,9 @@ input[type=text]{
         font-size: 20px;
         font-weight: 5000;
         border-radius: 30px;
-        margin-left: 60px;
+        margin-left: 33px;
         width: 15%;
+        text-align: center;
         
         
     }

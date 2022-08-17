@@ -30,12 +30,12 @@ header > img:last-child{
 section.flex{
     background-color:bisque;
     width: 100%;
+    
 }
 section.sub{
     
     width: 50%;
    
-    
 }
 ul.menus{
     list-style-type: none;
@@ -108,10 +108,8 @@ ul.tail > li > a{
         height: 80px;
     }
 
-    div.contents{
-        width: 99%;
-    }
-    ul.menus{
+    
+    /* ul.menus{
         flex-direction: column;
         
         
@@ -121,17 +119,18 @@ ul.tail > li > a{
         max-width: 100%;
         height: 45px;
         
-    }
+    } */
     section.flex{
         background-color:bisque;
         width: 100%;
-        margin: 5px;
+        
+        
        
     }
     section.sub{
-        margin: 5px;
+        margin-right: 5px;
         width: 100%;
-        
+        align-items: center;
        
         
     }
@@ -146,6 +145,7 @@ ul.tail > li > a{
     }
     li.menu img{
         width: 100%;
+       padding: 0 38px 5px 5px;
        
        
     }
@@ -180,6 +180,10 @@ ul.tail > li > a{
     }
     div.last{
         font-size: 10px;
+        
+    }
+    ul.tail{
+        padding: 5px 5px;
     }
     
 }
