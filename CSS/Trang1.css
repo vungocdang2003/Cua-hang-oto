@@ -192,7 +192,7 @@ h1.titles >span{
 
 h1.titles >span::after{
     content: " ";
-    border-width: 29px;
+    border-width: 28.5px;
     border-style: solid;
     border-color: transparent transparent blue blue;
     position: absolute;
@@ -207,6 +207,7 @@ h1.question{
 }
 
 h1.question >span{
+    margin-top: 5px;
     background-color: blue;
     display: block;
     width: 50%;
@@ -221,7 +222,7 @@ h1.question >span{
 
 h1.question >span::after{
     content: " ";
-    border-width: 47px;
+    border-width: 47.5px;
     border-style: solid;
     border-color: transparent transparent blue blue;
     position: absolute;
@@ -250,7 +251,7 @@ h1.title >span{
 
 h1.title >span::after{
     content: " ";
-    border-width: 47px;
+    border-width: 47.5px;
     border-style: solid;
     border-color: transparent transparent blue blue;
     position: absolute;
@@ -459,7 +460,7 @@ footer > span{
     
     h1.titles >span::after{
         content: " ";
-        border-width: 20px;
+        border-width: 19.5px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -474,6 +475,7 @@ footer > span{
     }
     
     h1.question >span{
+        margin-top: 3px;
         background-color: blue;
         display: block;
         width: 50%;
@@ -539,6 +541,7 @@ footer > span{
     }
 
     div.last{
+        margin-top: 3px;
         font-size: 10px;
         width: 99%;  
     }
