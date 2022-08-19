@@ -459,7 +459,7 @@ footer > span{
     
     h1.titles >span::after{
         content: " ";
-        border-width: 18px;
+        border-width: 20px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
