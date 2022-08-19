@@ -2,7 +2,7 @@ function init(){
     $("#gototop").hide();
 
     $(window).scroll(function(){
-
+        
         if($(this).scrollTop() >= 500){
             $("nav").css({
                 "position": "fixed",

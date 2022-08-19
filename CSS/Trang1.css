@@ -459,7 +459,7 @@ footer > span{
     
     h1.titles >span::after{
         content: " ";
-        border-width: 28px;
+        border-width: 18px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -488,7 +488,7 @@ footer > span{
     
     h1.question >span::after{
         content: " ";
-        border-width: 47px;
+        border-width: 48px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
@@ -517,7 +517,7 @@ footer > span{
     
     h1.title >span::after{
         content: " ";
-        border-width: 28px;
+        border-width: 29px;
         border-style: solid;
         border-color: transparent transparent blue blue;
         position: absolute;
