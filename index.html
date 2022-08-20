@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Trang1.css">
+    <link rel="stylesheet" href="CSS/Trang1.css"/>
     <script src="Javascript/Trang1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="Javascript/jquery-3.6.0.min.js"></script>
 
    
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <title>Trang1</title>
 </head>
@@ -29,7 +29,13 @@
     <div class="Slides" onload="changeImage">
         <img src="anh/banner1.png" alt="banner1" id="banner">
     </div>
+            
+        
+    <div class="show-hide">
+        <i class="fa-solid fa-align-justify"></i>
+    </div>     
     <nav>
+        
         <ul class="menus">
             <li><a href="http://127.0.0.1:5500/HTML/Baitaplon.html#" target="_parent"> <i class="fa-solid fa-house"></i> Trang chủ</a></li>
             <li class="menu">
@@ -43,9 +49,18 @@
             </li>
             <li><a href="#" target="_parent"><i class="fa-solid fa-comment"></i> Đánh giá xe</a></li>
             <li><a href="#" target="_parent"><i class="fa-solid fa-newspaper"></i> Tin tức xe</a></li>
-            <li><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Tìm kiếm"></li>
+            <li>
+                <div class="find">
+                    <i class="fa-solid fa-magnifying-glass"></i> <input type="text" id="car" placeholder="Tìm kiếm"/>
+                    <ul id="suggest">
+
+                    </ul>
+                </div>
+            </li>
         </ul>
     </nav>
+       
+    
     <div class="buy">
         <h2><a href="Trang2.html" target="_blank">Mua xe tại đây, an tâm kiểm dịch(ấn vào đây để đăng ký)</a></h2>
         

@@ -69,6 +69,17 @@ a#gototop{
     bottom: 0;
     right: -20px;
 }
+
+div.show-hide{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
 ul.menus{
     display: flex;
     background: linear-gradient(violet, lightblue);
@@ -91,6 +102,7 @@ ul.menus > li > a{
 ul.menus > li > a:hover{
     background-color: blue;
     color: white;
+    transition: all 0.5s;
 }
 
 .sub{
@@ -103,6 +115,26 @@ ul.menus > li > a:hover{
     display: block !important;
     padding: 1rem ;
     
+}
+
+div.find{
+    display: block;
+}
+
+ul#suggest{
+    background-color: lightgray;
+    margin-left: 20px;
+    width: 160px;
+    position: absolute;
+}
+
+ul#suggest > li{
+    list-style-type: none;
+    
+}
+
+ul#suggest > li > a{
+    text-decoration: none;
 }
 
 div.buy{
@@ -293,10 +325,11 @@ div.contents{
     padding: 5px;
 }
 div.content img{
+    height: 250px;
     width: 100%;
     padding: 5px;
     /* margin: 1%; */
-   transition: transform .5s linear;
+   transition: transform 1s linear;
 }
 div.content img:hover{
     transform: scale(0.9);
@@ -336,6 +369,7 @@ div.tuyendung{
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
+    margin-bottom: 1px;
 }
 div.tuyendung > a{
     text-decoration: none;
@@ -359,7 +393,7 @@ ul.tail > li > a{
 }
 
 footer{
-    
+    margin-top: 1px;
     background: linear-gradient(silver, lightgreen);
     overflow: hidden;   
     
@@ -423,9 +457,15 @@ footer > span{
     div.contents{
         width: 99%;
     }
+    div.show-hide{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
     ul.menus{
         flex-direction: column;
-        
+        text-align: center;
         
     }
     ul.menus > li{

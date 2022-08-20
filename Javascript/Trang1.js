@@ -1,3 +1,4 @@
+let cars = ["lamborghini", "audi", "mercedes", "ferrari"];
 function init(){
     $("#gototop").hide();
 
@@ -23,7 +24,7 @@ function init(){
             })
         }
         
-        if($(this).scrollTop() >= 300){
+        if($(this).scrollTop() >= 310){
             $("aside").css({
                 "display": "block",
                 "left": 3,
@@ -44,6 +45,7 @@ function init(){
             $("#gototop").show("slow");
         else
             $("#gototop").hide("slow");
+
     })
 
     $("#gototop").click(function(){
@@ -74,4 +76,32 @@ function init(){
     }
 
     setInterval(changeImage,3000);
+
+   $(document).ready(function(){
+    $(".show-hide").click(function(){
+        $("nav").slideToggle();
+    });
+
+    $("#car").keyup(function(){
+       let txt = $(this).val();
+       let h = '';
+       for(let c of cars)
+        if(c.toLowerCase().indexOf(txt) >= 0)
+            h += `<li><a href="javascript:;">${c}</a></li>`;
+
+        if(h !== ''){
+            $("#suggest").show();
+            $("#suggest").html(h);
+        }
+    });
+
+    $("#suggest").on("click", "a", function(){
+        let text = $(this).text();
+        $("#car").val(text);
+        
+        $("#suggest").hide();
+    })
+   })
+
+   
 }

@@ -40,7 +40,7 @@ section.sub{
 ul.menus{
     list-style-type: none;
     display: flex !important;
-    align-items: center;
+    justify-content: center;
     
     
    
@@ -137,7 +137,7 @@ ul.tail > li > a{
     ul.menus{
         list-style-type: none;
         display: flex !important;
-       
+       justify-content: center;
         
         
        

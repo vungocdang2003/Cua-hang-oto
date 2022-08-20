@@ -4,12 +4,13 @@
 }
 body{
     background-color: rgb(223, 232, 241);
+    
 }
 
 div.form{
     width: 50%;
     margin: 10rem auto;
-    background-color: yellowgreen;
+    background-color: rgb(55, 41, 180);
     align-items: center;
     padding: 1rem 1rem;
     border-radius: 1rem 1rem;
@@ -62,7 +63,7 @@ div.conteiner{
     top: 20%;
     transform: translate(-50% -50%) scale(1);
     left: 37%;
-  
+    
 }
 .show img{
     width: 50%;

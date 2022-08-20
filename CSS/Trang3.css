@@ -40,8 +40,8 @@ section.sub{
 ul.menus{
     list-style-type: none;
     display: flex !important;
-    align-items: center;
     
+    justify-content: center;
     
    
     

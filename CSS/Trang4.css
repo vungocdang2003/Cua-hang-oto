@@ -56,8 +56,13 @@ section.content > h1{
 }
 
 table{
-    border: 1px solid black;
+    
+    border-collapse: collapse;
     text-align: center;
+}
+table  td{
+    padding: 1rem 1rem;
+    border: 2px solid black;
 }
 
 section.content > div.sub{
