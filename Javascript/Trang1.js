@@ -89,9 +89,12 @@ function init(){
         if(c.toLowerCase().indexOf(txt) >= 0)
             h += `<li><a href="javascript:;">${c}</a></li>`;
 
-        if(h !== ''){
+        if(txt !== ''){
             $("#suggest").show();
             $("#suggest").html(h);
+        }
+        else{
+            $("#suggest").hide();
         }
     });
 

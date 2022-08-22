@@ -127,17 +127,7 @@ footer > span{
     div.contents{
         width: 99%;
     }
-    ul.menus{
-        flex-direction: column;
-        
-        
-    }
-    ul.menus > li{
-        text-align: left;
-        max-width: 100%;
-        height: 45px;
-        
-    }
+    
     section.contents{
         display: block;
     }
